@@ -1,0 +1,50 @@
+<script>
+
+    //создаем новую инструкцию по созданию юзеров
+class User {
+
+    //вызывается автоматически при создании объекта
+    constructor(name, age, job){
+        this.firstName = name;
+        this.userAge = age;
+        this.userJob = job;  
+    }
+
+    sayHI(){
+        console.log("Привет")
+    }
+
+    tellAboutYouself() {
+        let story = `
+        Привет всем, меня зовут ${this.firstName}. 
+        Мой возраст ${this.Age} . 
+        Я - крутой ${this.Job} разработчик. 
+        `;
+        console.log(story);
+    }
+
+}
+
+//создаем нового юзера по инструкции
+let user = new User("John", 25, "fullstak");
+let userPro = new User ("Sam", 28, "backend");
+let userFront = new User ("Kevin", 22, "frontend");
+
+console.log(user);
+console.log(userPro);
+console.log(userFront);
+
+user.sayHI();
+userPro.sayHI();
+userFront.sayHI();
+
+user.tellAboutYouself();
+userPro.tellAboutYouself();
+userFront.tellAboutYouself();
+//при создании методов не пошеи функшион!
+</script>  
+
+333
+55555555
+
+

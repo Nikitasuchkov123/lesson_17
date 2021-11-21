@@ -1,0 +1,53 @@
+<script>
+
+//создать класс Hero
+class Hero{
+
+    constructor (race, name, warClass) {
+        this.force = 0;
+        this.mana = 0;
+        this.helse = 20;
+    }
+
+    attack() {
+        let attack = `
+        атакую вручную с силой ${this.force} единиц
+        атакую магией с МАНА ${this.mana} единиц
+        увеличиваю свое здоровье на ${this.helse} и теперь оно равно ${this.helse+20} единиц
+         `;
+        this.helse = this.helse + 20
+        console.log(attack);
+    }
+}
+
+let hero = new Hero("human", "Tom", "palach");
+
+console.log(hero);
+
+hero.attack();
+
+console.log(hero);
+//Hero.attack_magic(force mana "0");
+//Hero.health( health "0");
+
+
+
+/*
+
+//при создании нового персонажа ему можно задать
+- расса
+- Имя 
+- Боевой класс
+По умолчанию создаются по нулям
+- сила
+- здоровье
+- мана
+
+действия
+- атаковать вручную - пишет атакую вручную с силой СИДА единиц
+- атаковать магией - пишет атакую магией с МАНА единиц
+- вылечиться - увеличиваю свое здоровье на 20 единиц и теперь оно равно ЗДОРОВЬЕ единиц
+
+*/
+
+</script>
